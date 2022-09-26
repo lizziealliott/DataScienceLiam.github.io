@@ -32,6 +32,7 @@ h1, h3, p{
 .chart{
     background-color: white;
     width:auto;
+    transform: translate(50%, 0);
     border-width: 10px;
     border-style: solid;
     border-radius: 5px;
