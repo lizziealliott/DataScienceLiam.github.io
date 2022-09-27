@@ -22,8 +22,8 @@ h1, h3, p{
 }
     
 .myWeek1{
-    padding-right: max(15px, 5%);
-    padding-left: max(15px, 5%);
+    padding-right: 15px;
+    padding-left: 15px;
     padding-bottom: 14px;
     padding-top: 8px;
     max-width: auto;
