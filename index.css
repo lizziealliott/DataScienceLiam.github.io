@@ -23,8 +23,9 @@ h1, h3, p{
     
 .myWeek1{
     margin: auto;
-    max-width: auto;
-    background-color: #FFC0CB;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #000080;
     
 }
 
