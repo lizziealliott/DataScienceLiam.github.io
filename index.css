@@ -10,13 +10,14 @@
 /* Set the background color for my page: */
 body{
     background-color: #000080;
+    width: 100%;
  
 }
 
 
 /* Choose the appearance of the tags, h1, h3 and p: */
 h1, h3, p{
-    color:rgb(255, 255, 255);
+    color: white;
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
@@ -24,11 +25,11 @@ h1, h3, p{
 .myWeek1{
     margin-right: 15px;
     margin-left: 15px;
-    margin-bottom: 14px;
-    margin-top: 8px;
-    width: auto;
-    background-color: #FFFF00;
-    
+    padding-bottom: 14px;
+    padding-top: 8px;
+    background-color: #000080;
+
+
 }
 
 
@@ -45,6 +46,6 @@ h1, h3, p{
     border-radius: 5px;
     border-color: red;
 
+
     
 }
-    
