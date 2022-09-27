@@ -1,6 +1,4 @@
-/* Richard Davies, Data Science for Economists */
-
-/* This is my first proper css file */
+/* Data Science for Economists */
 
 
 /* Import a font */
@@ -10,7 +8,8 @@
 /* Set the background color for my page: */
 body{
     background-color: #000080;
-    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 25px;
  
 }
 
@@ -23,10 +22,6 @@ h1, h3, p{
 }
     
 .myWeek1{
-    margin-right: 15px;
-    margin-left: 15px;
-    padding-bottom: 14px;
-    padding-top: 8px;
     background-color: #000080;
 
 
@@ -37,7 +32,7 @@ h1, h3, p{
 .chart{
     background-color: white;
     width:auto;
-    position: absolute;
+    padding: 5px  !important;
     left: 50%; 
     right: 50%;
     transform: translate(-50%,0%);
@@ -45,7 +40,9 @@ h1, h3, p{
     border-style: solid;
     border-radius: 5px;
     border-color: red;
-
+    margin: 25px;
+    
 
     
 }
+    
