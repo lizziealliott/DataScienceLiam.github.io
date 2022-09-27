@@ -22,8 +22,11 @@ h1, h3, p{
 }
     
 .myWeek1{
-    margin: auto;
-    max-width: 100%;
+    padding-right: max(15px, 5%);
+    padding-left: max(15px, 5%);
+    padding-bottom: 14px;
+    padding-top: 8px;
+    max-width: auto;
     background-color: #000080;
     
 }
