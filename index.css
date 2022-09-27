@@ -23,7 +23,7 @@ h1, h3, p{
     
 .myWeek1{
     margin: auto;
-    width: device-width;
+    max-width: 100%;
     background-color: #000080;
     
 }
