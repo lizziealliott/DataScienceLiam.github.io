@@ -1,4 +1,4 @@
-/* Data Science for Economists */
+/* Data Science for Economists - 2022 - Liam Bedwell */
 
 
 /* Import a font */
@@ -8,24 +8,55 @@
 /* Set the background color for my page: */
 body{
     background-color: #000080;
-    max-width: 90%;
+    width: 90%;
     margin: auto;
+    text-align: center;
+    padding-top: 30px;
  
 }
 
 
 /* Choose the appearance of the tags, h1, h3 and p: */
-h1, h3, p{
+
+h1{
     color: white;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    font-size: 2.2em;
+}
+
+h2{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+
+
+h3{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: -7px;
 }
     
-.myWeek1{
-    background-color: #000080;
 
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+  }
 
-}
 
 
 /* Set the apperance of the class, chart */
@@ -34,16 +65,95 @@ h1, h3, p{
     padding: 5px  !important;
     text-align: center; /* Moves drop down to center of chart*/
     border-width: 3px;
+    vertical-align: center !important;
     width: auto;
-    left: 50%; 
-    right: 50%;
-    transform: translate(-50%,0%);
-    margin-bottom: 1em;
+    margin: 16px;
     border-style: solid;
     border-radius: 5px;
     border-color: red;
     
 
-    
 }
-    
+
+
+/* The below CSS is taken from RapidCharts, and sets a different number of columns (of graphs) on the page depending on the size of the screen that is being used. */
+/* E.g., a typical phone displays one column, and iPad displays two, and a typical computer screen displays three. */
+/* ------------------------------------------------------------------------------
+	DIFFERENT SCREEN SIZES
+-------------------------------------------------------------------------------*/
+
+/* One column*/
+@media only screen and (min-width: 250px) {
+  .grid_items {
+    grid-template-columns: 100%;
+    max-width: 420px; 
+    margin: 0 auto 0 auto !important;
+	padding: 0 5 0 5; 
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    text-align: center;
+  }
+
+  .wrap {
+    grid-template-columns: 100%;
+    max-width: 360px; 
+    margin: 0 auto 0 auto !important;
+	  padding: 0 5 0 5; 
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    text-align: center;
+  }
+  .grid_items > div {
+    padding: 10px;
+  }
+  .rubric {
+    text-align: left;
+  }
+}
+
+/* Two columns*/
+@media only screen and (min-width: 900px) {
+  .grid_items, .wrap {
+    grid-template-columns: 47.5% 47.5%;
+    max-width: 880px; 
+    margin: 0 auto 0 auto !important;
+	padding: 0 5 0 5; 
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    text-align: left;
+  }
+  .grid_items > div {
+    padding: 10px;
+  }
+}
+
+/* Three columns*/
+@media only screen and (min-width: 1400px) {
+  .grid_items, .wrap {
+    grid-template-columns: 30% 30% 30%;
+    max-width: 1400px; 
+    margin: 0 auto 0 auto !important;
+	padding: 0 5 0 5; 
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+  }
+  
+  .grid_items > div {
+    padding: 10px;
+  }
+}
+
+/* Four columns*/
+@media only screen and (min-width: 1800px) {
+  .grid_items, .wrap {
+    grid-template-columns: 25% 25% 25% 25%;
+    max-width: 1900px; 
+    margin: 0 auto 0 auto !important;
+	padding: 0 5 0 5; 
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+  }
+  .grid_items > div {
+    padding: 10px;
+  }
+}
