@@ -27,3 +27,39 @@
     <a onclick="window.location.href = 'portfolio'" class="active">Portfolio</a>
     <a onclick="window.location.href = 'project'" >Project</a>
   </div>    
+
+      <!-- Week 1-->
+
+
+      <h2>Week 1: Building a website and embedding charts</h2>
+
+      <p> Insert text here </p>
+      <div class="container">
+  
+            <div class="body">
+                 <h3>COVID-19</h3>
+                 <!--Chart 1: Covid Cases: UK Regions -->
+                 <div class="chart" id="Chart1">
+                    <script>
+                          var myChart1 = "chart1_covidUKRegions.json";
+                          vegaEmbed('#Chart1', myChart1);
+                    </script>
+                </div>
+                <p> The first chart tracks Covid-19 cases by UK region.</p>
+           </div>
+  
+           <div class="body">
+                 <h3>Productivity puzzle</h3>
+                 <!--Chart 2: UK Productivity, 1971 - 2021 -->
+                 <div class="chart" id="Chart2">
+                    <script>
+                          var myChart2 = "chart2_ukProductivity.json";
+                          vegaEmbed('#Chart2', myChart2);
+                   </script>
+                </div>
+                <p> The second chart looks at productivity in the UK</p>
+          </div>
+  
+      </div>
+  
+  
