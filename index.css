@@ -5,6 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
+/* Code for the navigation bar found on W3Schools */
+
+
 /* Set the background color for my page: */
 body{
     background-color: #000080;
@@ -14,6 +17,46 @@ body{
     padding-top: 1.88em;
  
 }
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #B7B6B6;
+    width: 98;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: -1.5em;
+    max-width: 1200px;
+        
+
+
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 3% 0em;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    width: 33.33%;
+
+
+  }
+  
+  .topnav a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color:orange;
+    color: white;
+  }
 
 
 /* Choose the appearance of the tags, h1, h3 and p: */
