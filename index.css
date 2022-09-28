@@ -31,12 +31,14 @@ h1, h3, p{
 /* Set the apperance of the class, chart */
 .chart{
     background-color: white;
-    width:auto;
     padding: 5px  !important;
+    text-align: center; /* Moves drop down to center of chart*/
+    border-width: 3px;
+    width: auto;
     left: 50%; 
     right: 50%;
     transform: translate(-50%,0%);
-    border-width: 10px;
+    margin-bottom: 1em;
     border-style: solid;
     border-radius: 5px;
     border-color: red;
