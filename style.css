@@ -90,7 +90,14 @@ p{
     text-align: center;
     margin-top: -0.15em;
 }
-    
+
+h4{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  margin: .18em;
+}
 
 .container {
     display: flex;
@@ -99,6 +106,53 @@ p{
     text-align: center;
   }
 
+  .container1{
+    background-color: transparent;
+    text-align: center;
+    margin: auto;
+} 
+
+  .button{
+    background-color: #00706cb4;
+    padding: 0.4em;
+    margin: 0.4em;
+    display:inline-flex;
+    vertical-align: middle;
+    min-height:1em;
+    min-width: 5em;
+    width: 35%;
+    height: 15%;
+    max-width:25em;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #00706cb4;
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    transition: background-color 1s ease;
+
+}
+
+.button:hover{
+    background-color: transparent;
+    border-color: #206a67;
+}
+
+.buttoncontainer{
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+    background-color: transparent;
+    min-width: 18em;
+    width: 70%;
+    margin-top: 1.5em;
+} 
 
 
 /* Set the apperance of the class, chart */
