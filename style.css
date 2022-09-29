@@ -39,7 +39,8 @@ body{
     list-style-type: none;
     color: #f2f2f2;
     text-align: center;
-    padding: 3% 0em;
+    padding-top: clamp(0.5em,3%,1.5em);
+    padding-bottom: clamp(0.5em,3%,1.5em);
     text-decoration: none;
     font-size: 1.1em;
     font-family: 'Nunito', sans-serif;
@@ -128,7 +129,7 @@ title1{
     justify-content: center;
     background-color: transparent;
     text-align: center;
-    align-items: center;
+    align-items: top;
     width: auto;
 
   
@@ -146,10 +147,10 @@ title1{
 .chart{
     background-color: white;
     padding: 0.25em  !important;
-    text-align: center; /* Moves drop down to center of chart*/
+    text-align: center; /* Moves drop down/slider to center of chart*/
     border-width: .2em;
-    vertical-align: center !important;
     width: auto;
+    height: auto;
     margin: .3em;
     border-style: solid;
     border-radius: .5em;
