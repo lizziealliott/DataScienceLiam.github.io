@@ -11,7 +11,7 @@
 /* Set the background color for my page: */
 body{
     background-color: #3aafa9;
-    width: 100%;
+    width: auto;
     min-width: 350px;
     text-align: center;
     padding-top: 1em;
@@ -21,12 +21,13 @@ body{
 
 .topnav {
     overflow: hidden;
+    display: flex;
     background-color: #449c98;
     text-align: center;
-    align-items: center;
+    align-items: left;
+    justify-content: left;
     list-style: none;
-    margin-left:0.5%;
-    margin-right:0.5%;
+    width: 100%;
     margin-top: .34em !important;
         
 
@@ -35,9 +36,9 @@ body{
   
   .topnav a {
     float: left;
-    display: inline-block;
     list-style-type: none;
     color: #f2f2f2;
+    display: inline-block;
     text-align: center;
     padding-top: clamp(0.5em,3%,1.5em);
     padding-bottom: clamp(0.5em,3%,1.5em);
