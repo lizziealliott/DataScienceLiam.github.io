@@ -92,7 +92,6 @@ p{
     font-size: 0.9em;
     text-align: center;
     margin: auto;
-    
     max-inline-size: 330px;
 }
 
@@ -127,7 +126,7 @@ title1{
     vertical-align: center;
     flex-flow: row wrap;
     justify-content: center;
-    background-color: red;
+    background-color: transparent;
     text-align: center;
     align-items: center;
     width: auto;
