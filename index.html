@@ -51,33 +51,31 @@
 
       <h2>Week 1: Building a website and embedding charts</h2>
 
-      <p> Insert text here </p>
+      <!-- <p> Insert text here </p> -->
       <div class="container">
   
-            <div class="body">
-                 <h3>COVID-19</h3>
-                 <!--Chart 1: Covid Cases: UK Regions -->
-                 <div class="chart" id="Chart1">
-                    <script>
-                          var myChart1 = "chart1_covidUKRegions.json";
-                          vegaEmbed('#Chart1', myChart1);
-                    </script>
-                </div>
-                <p> The first chart tracks Covid-19 cases by UK region.</p>
-           </div>
-  
            <div class="body">
-                 <h3>Productivity puzzle</h3>
+                 <h3>UK GDP</h3>
                  <!--Chart 2: UK Productivity, 1971 - 2021 -->
-                 <div class="chart" id="Chart2">
+                 <div class="chart" id="Chart3">
                     <script>
-                          var myChart2 = "chart2_ukProductivity.json";
-                          vegaEmbed('#Chart2', myChart2);
+                          var myChart3 = "chart3_ukGDP.json";
+                          vegaEmbed('#Chart3', myChart3);
                    </script>
                 </div>
-                <p> The second chart looks at productivity in the UK</p>
+                <p> This chart looks at how GDP has grown in the UK over time. </p>
           </div>
   
+          <div class="body">
+            <h3>UK Inflation</h3>
+            <!--Chart 1: Covid Cases: UK Regions -->
+            <div class="chart" id="Chart4">
+               <script>
+                     var myChart4 = "chart4_ukInflation.json";
+                     vegaEmbed('#Chart4', myChart4);
+               </script>
+           </div>
+           <p> This chart looks at the change in the rate of inflation in the UK.</p>
       </div>
   
   

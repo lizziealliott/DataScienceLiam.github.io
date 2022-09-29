@@ -11,8 +11,8 @@
 /* Set the background color for my page: */
 body{
     background-color: #3aafa9;
-    width: 90%;
-    margin: auto;
+    width: 100%;
+    min-width: 350px;
     text-align: center;
     padding-top: 1em;
  
@@ -22,11 +22,12 @@ body{
 .topnav {
     overflow: hidden;
     background-color: #449c98;
-    left: 0;
-    right: 0;
-    margin-left: -4%;
-    margin-right: -4%;
-    margin-top: .34em;
+    text-align: center;
+    align-items: center;
+    list-style: none;
+    margin-left:0.5%;
+    margin-right:0.5%;
+    margin-top: .34em !important;
         
 
 
@@ -34,7 +35,8 @@ body{
   
   .topnav a {
     float: left;
-    display: block;
+    display: inline-block;
+    list-style-type: none;
     color: #f2f2f2;
     text-align: center;
     padding: 3% 0em;
@@ -81,6 +83,7 @@ h3{
     font-family: 'Roboto', sans-serif;
     text-align: center;
     margin-bottom: 0em;
+
 }
 
 p{
@@ -88,7 +91,9 @@ p{
     font-family: 'Roboto', sans-serif;
     font-size: 0.9em;
     text-align: center;
-    margin-top: -0.15em;
+    margin: auto;
+    
+    max-inline-size: 330px;
 }
 
 h4{
@@ -113,25 +118,29 @@ title1{
 .container0 {
     background-color: transparent;
     text-align: Left;
-    margin-left: -4%;
+    margin-left: 0.7%;
 
   }
 
 .container {
-    display: flex;
+    display: inline-flex;
+    vertical-align: center;
     flex-flow: row wrap;
     justify-content: center;
-    background-color: transparent;
+    background-color: red;
     text-align: center;
+    align-items: center;
+    width: auto;
+
+  
   }
 
   .container1{
     background-color: transparent;
     text-align: left;
-    margin-left: -4%;
+    margin-left: 0.7%;
 
 } 
-
 
 
 /* Set the apperance of the class, chart */
@@ -145,7 +154,7 @@ title1{
     margin: .3em;
     border-style: solid;
     border-radius: .5em;
-    border-color: red;
+    border-color: grey;
     
 
 }
@@ -167,13 +176,14 @@ title1{
     grid-column-gap: 10px;
     grid-row-gap: 40px;
     text-align: center;
+
   }
 
   .wrap {
     grid-template-columns: 100%;
     max-width: 360px; 
     margin: 0 auto 0 auto !important;
-	  padding: 0 5 0 5; 
+	padding: 0 5 0 5; 
     grid-column-gap: 10px;
     grid-row-gap: 40px;
     text-align: center;
