@@ -11,10 +11,13 @@
 /* Set the background color for my page: */
 body{
     background-color: #3aafa9;
+    margin: auto;
     width: auto;
+    overflow:scroll;
     min-width: 350px;
     text-align: center;
     padding-top: 1em;
+    vertical-align: center;
  
 }
 
