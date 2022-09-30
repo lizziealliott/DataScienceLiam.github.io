@@ -3,9 +3,9 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
 "title": {
-    "text": "Decomposed Aggregate Yearly Pharmaceutical Cost to NHS",
+    "text": "Decomposed Ag",
     "fontSize": 20,
-    "subtitle":"Colours represent category of pharmaceutical",
+    "subtitle":"Colours represent",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":12,
     "anchor": "start",
@@ -20,7 +20,7 @@
   
   "height": 480,
   
-  "width": 650,
+  "width": "container",
   
   "selection": {
     "Category": {
@@ -31,7 +31,7 @@
         "options": [
           null, "Drugs Used In Diabetes"
         ],
-        "name": "Change to Just Diabetes Drugs: "
+        "name": "Options: "
       }
     }
   },
@@ -48,7 +48,7 @@
       "field": "year", 
       "type": "nominal", 
       "title": null,
-      "axis": {"labelAngle": 0}},
+      "axis": {"labelAngle": 90}},
     "y": {
       "field": "NIC",
       "type": "quantitative",

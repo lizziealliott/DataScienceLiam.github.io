@@ -7,7 +7,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <link rel="icon" href="Data.png">
     
     <!-- Title for the page -->
@@ -54,43 +53,48 @@
       <h2>Week 1: Building a website and embedding charts</h2>
 
       <!-- <p> Insert text here </p> -->
-      <div class="container">
+
   
            <div class="body">
                  <h3>UK GDP</h3>
                  <!--Chart 2: UK Productivity, 1971 - 2021 -->
+                  <container class="bcontainer">
                  <div class="chart" id="Chart3">
                     <script>
                           var myChart3 = "chart3_ukGDP.json";
                           vegaEmbed('#Chart3', myChart3);
                    </script>
                 </div>
+                  </container>
                 <p> This chart looks at how GDP has grown in the UK over time. </p>
           </div>
-  
+
           <div class="body">
             <h3>UK Inflation</h3>
             <!--Chart 1: Covid Cases: UK Regions -->
+            <container class="bcontainer">
             <div class="chart" id="Chart4">
                <script>
                      var myChart4 = "chart4_ukInflation.json";
                      vegaEmbed('#Chart4', myChart4);
                </script>
            </div>
+            </container>
            <p> This chart looks at the change in the rate of inflation in the UK.</p>
       </div>
   
             <div class="body">
                   <h3>UK Inflation</h3>
                    <!--Chart 1: Covid Cases: UK Regions -->
+                  <container class="bcontainer">
                   <div class="chart" id="Chart5">
                           <script>
                              var myChart5 = "chart5_test.json";
                              vegaEmbed('#Chart5', myChart5);
                         </script>
-            </div>
+                  </div>
+            </container>
            <p> This chart looks at the change in the rate of inflation in the UK.</p>
       </div>
 
       <h2>Week 2: .....</h2>
-  

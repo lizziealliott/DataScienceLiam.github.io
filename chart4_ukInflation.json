@@ -12,7 +12,7 @@
 },
 
 
-  "width":280,
+  "width":"container",
   "height":300,
 
   "data": {
