@@ -83,6 +83,16 @@ h2{
 }
 
 
+h20 { /*same as h2, different top margin for rest of headings*/
+  color: white; 
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin-top: 0 em;
+  font-size: 1.2em;
+  width: 100%;
+
+}
+
 h3{
     color: white;
     font-family: 'Roboto', sans-serif;
