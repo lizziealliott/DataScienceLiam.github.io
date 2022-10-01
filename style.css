@@ -246,7 +246,7 @@ title1{
 
 @media only screen and (min-width: 1300px) {
   .chart {
-    max-width: 30%;  /* change to 30% for 3 charts, etc.*/
+    max-width: 46%;  /* change to 30% for 3 charts, etc.*/
   }
 
 }
