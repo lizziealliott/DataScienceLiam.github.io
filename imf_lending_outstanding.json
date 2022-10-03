@@ -22,16 +22,19 @@
     "mark": {
         "type": "bar",
         "color": "blue"
+
     },
     "encoding": {
         "x": {
             "field": "Year",
-            "type": "temporal",
+            "type": "nominal",
             "axis": {
                 "title": null,
-                "grid": false,
-                "ticks": false,
-                "labelAngle": 45
+                "labelAngle": 45,
+                "ticks": true,
+                "tickWidth": 1.3,
+                "tickColor": "grey",
+                "values": [1984, 1990,1995, 2000,2005, 2010,2015,2020]
             }
         },
         "y": {

@@ -180,7 +180,7 @@ title1{
     
 }
 /* use for full width chart */
-#chart1{
+.chart1{
   background-color: white;
   border-style: solid;
   border-color: grey;
@@ -188,8 +188,10 @@ title1{
   border-radius: .5em;
   text-align: center;
   padding: 0.2em  !important;
-  width: 96%;
+  width: 60%;
   min-width: 280px;
+  max-width: 100%;
+
 }
 
 .a_container {
@@ -235,6 +237,11 @@ title1{
   .a_container {
     padding: 0px;
     gap: 10px 10px
+  }
+
+  .chart1 {
+    min-width: 98%;
+    padding: 0px;
   }
 }
 
