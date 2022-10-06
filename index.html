@@ -51,18 +51,20 @@
 <h2>Week 1: Building a website and embedding charts</h2>
       <!-- <p> (sub heading) Insert text here </p> -->
 
-<container class="a_container">
+
 
   <!--Chart 3 (1) showing UK GDP over time -->
-
+<container class="a_container">
     <div class="chart" id="chart3">
         <script>
           var myChart3 = "chart3_ukGDP.json";
           vegaEmbed('#chart3', myChart3);
         </script>
       </div>
+      </container>
 
   <!--Chart 4 (2) showing UK Inflation over time -->
+  <container class="a_container">
       <div class="chart" id="chart4">
           <script>
             var myChart4 = "chart4_ukInflation.json";
@@ -80,27 +82,37 @@
       </div> -->
 
 
-<h5>Week 2: .....</h5>
+<h5>Week 2: Improving a chart </h5>
 
 
   <!--Chart 6 (3) showing IMF lending -->
-<container class="a_container1">
-    <div class="chart1" id="chart6">
+<container class="a_container">
+    <h6>Recreation of Financial Times chart</h6>
+    <div class="chart0" id="chart6">
         <script>
           var myChart6 = "imf_lending_outstanding.json";
           vegaEmbed('#chart6', myChart6);
         </script>
-        </div>
-</container>
+      </div>
+      </container>
+
 
   <!--Chart 7 (4) showing IMF exchange rate -->
-<!-- 
-    <div class="chart" id="chart7">
+<container class="a_container">
+  <h6>Impproved by adding context</h6>
+    <div class="chart0" id="chart7">
       <script>
-        var myChart1 = "chart1_covidUKRegions.json";
-        vegaEmbed('#chart1', myChart1);
+        var myChart7 = "imf_lending_to_GDP.json";
+        vegaEmbed('#chart7', myChart7);
       </script>
-      </div> -->
+    </div>
+</container>
+<div>
+<h7>After contextualising the data to factor the change in world GDP, it seems that 1984 would be a riskier time to invest than 2022.</h6>
+</div>
 
+<div>
+<h5>Week 3: .....</h5>
+</div>
 
 </html>

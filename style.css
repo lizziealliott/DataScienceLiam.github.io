@@ -88,10 +88,39 @@ h5 { /*same as h2, different top margin for rest of headings*/
   color: white; 
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  margin-top: 1em;
-  margin-bottom: 0;
+  margin-top: 1.88em;
+  margin-bottom: 0em;
   font-size: 1.2em;
   width: 100%;
+
+}
+
+h6 {
+  /*Use for chart title*/
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  margin-bottom: 0.1em;
+  margin-left: 3.9%;
+  align-items: center;
+  margin-top: 1em !important;
+  font-size: 1em;
+  width: 92%;
+
+}
+
+h7 {
+  /*Descriptions*/
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  margin-bottom: 0.1em;
+  margin-left: 3.7%;
+  text-align: center;
+  align-items: center;
+  margin-top: 0.4em !important;
+  font-size: 1em;
+  width: 92%;
 
 }
 
@@ -170,7 +199,8 @@ title1{
   text-align: center; /* Moves drop down/slider to center of chart*/
   border-width: .2em;
   height: 100%;
-  width: 46%;
+  width: 98%;
+  display: inline-block !important;
   min-width: 280px;
   margin: .2em;
   border-style: solid;
@@ -178,6 +208,22 @@ title1{
   border-color: grey;
 
     
+}
+/* same as chart, but different top margin as not the first */
+.chart0 {
+  background-color: white;
+  padding: 0.2em !important;
+  text-align: center; /* Moves drop down/slider to center of chart*/
+  border-width: .2em;
+  height: 100%;
+  width: 98%;
+  min-width: 280px;
+
+  margin: .2em;
+  border-style: solid;
+  border-radius: .5em;
+  border-color: grey;
+
 }
 /* use for full width chart */
 .chart1{
@@ -195,22 +241,22 @@ title1{
 }
 
 .a_container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  display: inline-table;
+  justify-content: center !important;
   vertical-align: bottom;
-  text-align: center;
-  gap: 20px 20px;
+  text-align: center !important;
+  align-items: center;
+  margin-left: 1.3%;
   margin-top: 0px;
-  width: auto;
   min-width: 280px;
   height: 100%;
+
 
 }
 
 
 /* use this container for charts which should span the width of the page regardless of screen size.*/
-.a_container1 {
+/* .a_container1 {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -221,12 +267,12 @@ title1{
   min-width: 280px;
   height: 100%;
 
-}
+} */
 
 
 
 /* Mobile friendly version to allow for clear viewing on a smartphone screen*/
-
+/* Doesn't do much as now using inline-table*/
 
 @media only screen and (max-width: 700px) {
   .chart {
@@ -236,27 +282,58 @@ title1{
 
   .a_container {
     padding: 0px;
-    gap: 10px 10px
+    gap: 10px 10px;
+    width: 100%;
+    margin-left: 0;
   }
 
   .chart1 {
     min-width: 98%;
     padding: 0px;
   }
+  
+  .chart0 {
+    min-width: 98%;
+    padding: 0px;
+    }
 }
 
 @media only screen and (min-width: 700px) {
   .chart {
-    max-width: 46%;
+    max-width: 98%;
 
   }
 
+ .a_container {
+   padding: 0px;
+   gap: 10px 10px;
+   width: 48%;
+ }
+
+ .chart1 {
+   min-width: 98%;
+   padding: 0px;
+ }
+
+ .chart0 {
+   min-width: 98%;
+   padding: 0px;
+ }
+ }
+
+ @media only screen and (min-width: 700px) {
+   .chart {
+     max-width: 98%;
+    
   } 
 
 @media only screen and (min-width: 1300px) {
   .chart {
-    max-width: 46%;  /* change to 30% for 3 charts, etc.*/
+    max-width: 98%;  /* change to 30% for 3 charts, etc.*/
   }
-
+  .chart0 {
+    max-width: 98%;
+      /* change to 30% for 3 charts, etc.*/
+  }
 }
-
+}
