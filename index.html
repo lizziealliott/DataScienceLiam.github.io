@@ -26,9 +26,13 @@
   }
 </script>
 <script>
-    type="text/javascript"> // RELOADS WEBPAGE WHEN MOBILE ORIENTATION CHANGES  
-    window.onorientationchange = function() {  	window.location.reload(); };
-
+$(window).on('orientationchange', function(e) {
+     $.mobile.changePage(window.location.href, {
+        allowSamePageTransition: true,
+        transition: 'none',
+        reloadPage: true
+    });
+});
 </script>
     
 </head>
