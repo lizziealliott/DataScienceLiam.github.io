@@ -234,9 +234,8 @@ title1{
   border-radius: .5em;
   text-align: center;
   padding: 0.2em  !important;
-  width: 60%;
+  width: 98%;
   min-width: 280px;
-  max-width: 100%;
 
 }
 
@@ -255,19 +254,17 @@ title1{
 }
 
 
-/* use this container for charts which should span the width of the page regardless of screen size.*/
-/* .a_container1 {
-  display: flex;
+.a_container1 {
+  display: block;
   flex-flow: row wrap;
   justify-content: center;
-  vertical-align: bottom;
   text-align: center;
   margin-top: 0px;
-  width: auto;
+  margin: auto;
   min-width: 280px;
   height: 100%;
 
-} */
+}
 
 
 
@@ -296,6 +293,9 @@ title1{
     min-width: 98%;
     padding: 0px;
     }
+  .a_container1 {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 700px) {
@@ -319,13 +319,16 @@ title1{
    min-width: 98%;
    padding: 0px;
  }
+  .a_container1 {
+    width: 80%;
  }
 
- @media only screen and (min-width: 700px) {
-   .chart {
-     max-width: 98%;
-    
-  } 
+@media only screen and (min-width: 1000px){
+    .a_container1 {
+        width: 68%;
+      }
+}
+
 
 @media only screen and (min-width: 1300px) {
   .chart {
@@ -335,5 +338,18 @@ title1{
     max-width: 98%;
       /* change to 30% for 3 charts, etc.*/
   }
+  .a_container1 {
+    width: 65%;
+    max-width: 880px;
+ }
 }
+
+@media only screen and (min-width: 1600px) {
+
+  .a_container1 {
+    width: 55%;
+    max-width: 880px;
+  }
+}
+
 }
