@@ -54,7 +54,7 @@
        "bind":{
          "input": "range",
          "min": 1955, 
-         "max": 2022, 
+         "max": 2020, 
          "step": 1,
          "name": "Start year:"}
     },
