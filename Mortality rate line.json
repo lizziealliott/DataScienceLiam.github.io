@@ -2678,7 +2678,7 @@
             }
         ]
     },
-"mark": {"type": "circle", "size": 75},
+"mark": {"type": "line"},
     "encoding": {
         "x": {
             "field": "DateClean",
