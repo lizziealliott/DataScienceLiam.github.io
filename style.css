@@ -124,6 +124,10 @@ h7 {
 
 }
 
+
+
+
+
 h3{
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -161,6 +165,8 @@ title1{
   margin:0;
 
 }
+
+
 
 .container0 {
     background-color: transparent;
@@ -206,6 +212,7 @@ title1{
   border-style: solid;
   border-radius: .5em;
   border-color: grey;
+  min-width: 98%;
 
     
 }
@@ -218,11 +225,11 @@ title1{
   height: 100%;
   width: 98%;
   min-width: 280px;
-
   margin: .2em;
   border-style: solid;
   border-radius: .5em;
   border-color: grey;
+  min-width: 98%;
 
 }
 /* use for full width chart */
@@ -234,7 +241,7 @@ title1{
   border-radius: .5em;
   text-align: center;
   padding: 0.2em  !important;
-  width: 98%;
+  min-width: 98%;
   min-width: 280px;
 
 }
@@ -268,8 +275,68 @@ title1{
 
 
 
+.container_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 3px;
+  justify-content: center !important;
+  vertical-align: bottom;
+  text-align: center !important;
+  align-content: center;
+  max-width: 90%;
+  margin:auto;
+  max-width: 1200px;
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+
+}
+
+
+
+.grid_container:nth-child(3) {
+  grid-column: 2;
+  grid-row: 2;
+  
+
+}
+
+.grid_container:nth-child(4) {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.chart_grid {
+  background-color: white;
+  border-style: solid;
+  border-color: grey;
+  border-width: .2em;
+  border-radius: .5em;
+  height: 330px;
+  min-width: 100%;
+  text-align: center;
+  padding: 0.2em !important;
+  margin-left: 0px;
+
+
+
+}
+
 /* Mobile friendly version to allow for clear viewing on a smartphone screen*/
 /* Doesn't do much as now using inline-table*/
+@media only screen and (max-width: 400px) {
+.container_grid {
+
+    width: 100%;
+    margin-left: 0%;
+    display: block !important;
+    }
+
+.text_container_1 {
+  display: none;
+}
+
+}
 
 @media only screen and (max-width: 700px) {
   .chart {
@@ -284,6 +351,9 @@ title1{
     margin-left: 0;
   }
 
+.text_container_1 {
+  display: none;
+  }
   .chart1 {
     min-width: 98%;
     padding: 0px;
@@ -296,6 +366,52 @@ title1{
   .a_container1 {
     width: 100%;
   }
+.container_grid {
+
+  width:100%;
+  margin-left: 0%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 3px;
+  justify-content: center !important;
+  vertical-align: bottom;
+  text-align: center !important;
+  align-items: center;
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+
+}
+
+
+
+
+.grid_container:nth-child(3) {
+  grid-column: 1;
+  grid-row: 2;
+
+}
+
+.grid_container:nth-child(4) {
+  grid-column: 2;
+
+}
+.grid_container{
+  width: 100%;
+}
+
+.chart_grid {
+  background-color: white;
+  border-style: solid;
+  border-color: grey;
+  border-width: .2em;
+  border-radius: .5em;
+  height: 330px;
+  min-width: 98%;
+  text-align: center;
+  padding: 0.2em !important;
+  margin-left: 0px;
+}
 }
 
 @media only screen and (min-width: 700px) {
@@ -303,12 +419,6 @@ title1{
     max-width: 98%;
 
   }
-
- .a_container {
-   padding: 0px;
-   gap: 10px 10px;
-   width: 48%;
- }
 
  .chart1 {
    min-width: 98%;
@@ -322,11 +432,26 @@ title1{
   .a_container1 {
     width: 80%;
  }
+.a_container {
+  width: 48%;
+
+
+}
+
+.text_container {
+  display: none;
+}
+
+}
+
 
 @media only screen and (min-width: 1000px){
     .a_container1 {
         width: 68%;
       }
+.text_container {
+  display: none;
+}
 }
 
 
@@ -342,14 +467,18 @@ title1{
     width: 65%;
     max-width: 880px;
  }
+.text_container {
+  display: none;
+}
 }
 
 @media only screen and (min-width: 1600px) {
-
+.text_container {
+    display: none;
+  }
   .a_container1 {
     width: 55%;
     max-width: 880px;
   }
 }
 
-}
