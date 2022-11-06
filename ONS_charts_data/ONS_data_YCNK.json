@@ -19,9 +19,9 @@
         "unit": "%"
     },
 "title": {
-    "text": "Real growth in pay",
+    "text": "Unemployment rate: South West",
     "subtitle": [
-        "Seasonally adjusted",
+        "All: %",
         "Source: ONS"
     ],
     "subtitleFontStyle": "italic",
@@ -5767,15 +5767,14 @@
     "x": {
         "field": "DataClean",
         "type": "temporal",
-        "axis": {
-            "labelAngle": 0
-        },
+        "axis": {"labelAngle": 0},
         "title": "Date"
     },
     "y": {
         "field": "value",
         "type": "quantitative",
-        "title": "Three month growth (%)"
+        "title": "Unemployment rate, %",
+        "scale": {"domain": [0,14]}
     }
 }
 }

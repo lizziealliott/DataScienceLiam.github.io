@@ -20,9 +20,9 @@
         "unit": "%"
     },
 "title": {
-    "text": "Real growth in pay",
+    "text": "% Working more than 45 hours",
     "subtitle": [
-        "Seasonally adjusted",
+        "per usual week",
         "Source: ONS"
     ],
     "subtitleFontStyle": "italic",
@@ -5764,7 +5764,8 @@
     "y": {
         "field": "value",
         "type": "quantitative",
-        "title": "Three month growth (%)"
+        "title": "% of all employees"
+
     }
 }
 }

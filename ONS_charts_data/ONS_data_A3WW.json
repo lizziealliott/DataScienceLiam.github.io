@@ -85,6 +85,7 @@
             "as": "DataClean"
         }
         ],
+
     "data":{
     "values": [
         {
@@ -2672,10 +2673,13 @@
 
 },
 
+
+
 "height": 220,
 "width": "container",
 
-"mark": "line",
+"layer":[
+{"mark": "line",
 "encoding": {
     "x": {
         "field": "DataClean",
@@ -2688,7 +2692,20 @@
     "y": {
         "field": "value",
         "type": "quantitative",
-        "title": "Three month growth (%)"
+        "title": "Three month growth, %"
+        }
     }
+},
+    {
+        "data": {"values": [{}]},
+        "mark": {
+            "type": "rule",
+            "strokeDash": [8,5],
+            "size": 2
+        },
+        "encoding": {"y": {"datum": 0}}
+    }
+]
 }
-}
+
+

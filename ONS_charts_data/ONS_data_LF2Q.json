@@ -9373,7 +9373,7 @@
     "y": {
         "field": "value",
         "type": "quantitative",
-        "title": "%"
+        "title": "Unemployment rate, %"
     }
 }
 }

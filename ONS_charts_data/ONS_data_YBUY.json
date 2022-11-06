@@ -20,9 +20,9 @@
         "unit": "hours"
     },
 "title": {
-    "text": "Real growth in pay",
+    "text": "Average actual weekly hours of work",
     "subtitle": [
-        "Seasonally adjusted",
+        "Full time workers, Seasonally adjusted",
         "Source: ONS"
     ],
     "subtitleFontStyle": "italic",
@@ -5781,7 +5781,8 @@
     "y": {
         "field": "value",
         "type": "quantitative",
-        "title": "Three month growth (%)"
+        "title": "Hours",
+        "scale": {"domain": [25,40]}
     }
 }
 }

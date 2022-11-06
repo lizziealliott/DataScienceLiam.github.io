@@ -19,9 +19,9 @@
         "unit": "%"
     },
 "title": {
-    "text": "Real growth in pay",
+    "text": "Unemployment rate: South East",
     "subtitle": [
-        "Seasonally adjusted",
+        "All: %",
         "Source: ONS"
     ],
     "subtitleFontStyle": "italic",
@@ -5769,7 +5769,8 @@
     "y": {
         "field": "value",
         "type": "quantitative",
-        "title": "Three month growth (%)"
+        "title": "Unemployment rate, %",
+        "scale": {"domain": [0,14]}
     }
 }
 }

@@ -20,9 +20,9 @@
         "unit": ""
     },
 "title": {
-    "text": "Real growth in pay",
+    "text": "Part-time workers: Ill or disabled",
     "subtitle": [
-        "Seasonally adjusted",
+        "Total, UK",
         "Source: ONS"
     ],
     "subtitleFontStyle": "italic",
@@ -5776,7 +5776,7 @@
     "y": {
         "field": "value",
         "type": "quantitative",
-        "title": "Three month growth (%)"
+        "title": "Thousands"
     }
 }
 }
