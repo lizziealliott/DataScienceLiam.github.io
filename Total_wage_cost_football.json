@@ -1,0 +1,99 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "Football teams with highest total player salaries",
+        "subtitle": [
+            "Source: spotrac"
+        ],
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 10,
+        "anchor": "start",
+        "color": "black"
+    },
+    "data": {
+        "values": [
+            {
+                "Team": "Manchester United",
+                "Estimated Total Salary": "227081000"
+            },
+            {
+                "Team": "Chelsea",
+                "Estimated Total Salary": "189048000"
+            },
+            {
+                "Team": "Manchester City",
+                "Estimated Total Salary": "177880000"
+            },
+            {
+                "Team": "Liverpool",
+                "Estimated Total Salary": "156340000"
+            },
+            {
+                "Team": "Tottenham Hotspur",
+                "Estimated Total Salary": "107639200"
+            },
+            {
+                "Team": "Arsenal",
+                "Estimated Total Salary": "95200000"
+            },
+            {
+                "Team": "Aston Villa",
+                "Estimated Total Salary": "81387396"
+            },
+            {
+                "Team": "Leicester City",
+                "Estimated Total Salary": "69473000"
+            },
+            {
+                "Team": "West Ham United",
+                "Estimated Total Salary": "68486000"
+            },
+            {
+                "Team": "Newcastle United",
+                "Estimated Total Salary": "65764200"
+            },
+            {
+                "Team": "Crystal Palace",
+                "Estimated Total Salary": "59425000"
+            },
+            {
+                "Team": "Everton",
+                "Estimated Total Salary": "45883000"
+            },
+            {
+                "Team": "Wolves",
+                "Estimated Total Salary": "41116000"
+            },
+            {
+                "Team": "Fulham",
+                "Estimated Total Salary": "37636824"
+            },
+            {
+                "Team": "Southampton",
+                "Estimated Total Salary": "36224000"
+            },
+            {
+                "Team": "Brighton & Hove Albion",
+                "Estimated Total Salary": "29981333"
+            }
+        ]
+    },
+    "height": 300,
+    "width": "container",
+    "mark": {
+        "type": "bar",
+        "color": "#000f71"
+    },
+    "encoding": {
+        "x": {
+            "field": "Team",
+            "type": "nominal",
+            "sort": "-y"
+        },
+        "y": {
+            "field": "Estimated Total Salary",
+            "title": "Total Player salaries, estimated, £",
+            "type": "quantitative"
+        }
+    }
+}
