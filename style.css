@@ -78,6 +78,7 @@ h2{
     font-family: 'Roboto', sans-serif;
     text-align: center;
     margin-top: 1.88em;
+    margin-bottom: 0;
     font-size: 1.2em;
     width:100%;
 
@@ -89,7 +90,7 @@ h5 { /*same as h2, different top margin for rest of headings*/
   font-family: 'Roboto', sans-serif;
   text-align: center;
   margin-top: 1.88em;
-  margin-bottom: 0em;
+  margin-bottom: 0.5em;
   font-size: 1.2em;
   width: 100%;
 
@@ -103,7 +104,7 @@ h6 {
   margin-bottom: 0.1em;
   margin-left: 3.9%;
   align-items: center;
-  margin-top: 1em !important;
+  margin-top: 0em !important;
   font-size: 1em;
   width: 92%;
 
@@ -114,13 +115,14 @@ h7 {
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
   display: block;
-  margin-bottom: 0.1em;
-  margin-left: 3.7%;
-  text-align: center;
+  margin-bottom: 0.1em !important;
+  margin: auto;
+  text-align: center !important;
   align-items: center;
   margin-top: 0.3em !important;
   font-size: 1em;
-  width: 92%;
+  width: 80% !important;
+  max-width: 1000px;
 
 }
 
@@ -136,6 +138,7 @@ h8 {
   margin-top: 0.3em !important;
   font-size: 1em;
   width: 92%;
+  max-width: 1200px;
 
 }
 
@@ -263,7 +266,7 @@ title1{
 .a_container {
   display: inline-table;
   justify-content: center !important;
-  vertical-align: bottom;
+  vertical-align: top;
   text-align: center !important;
   align-items: center;
   margin-left: 1.3%;

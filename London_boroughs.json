@@ -1,0 +1,35 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "London boroughs",
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 10,
+        "anchor": "middle",
+        "color": "black"
+    },
+    "config": {
+        "background": "white",
+        "view": {
+            "stroke": "transparent"
+        }
+    },
+    "width": "container",
+    "height": 300,
+    "data": {
+        "url": "https://raw.githubusercontent.com/DataScienceLiam/DataScienceLiam.github.io/main/London_boroughs_data.json",
+        "format": {"property": "features"}
+        },
+    
+    "projection": {
+        "type": "mercator"
+    },
+    "mark": {
+        "type": "geoshape",
+        "fill": "#C4CFD8",
+        "stroke": "darkgrey",
+        "strokeWidth": 1
+    },
+
+
+"encoding": {"tooltip": {"field": "properties.name"}}
+}
