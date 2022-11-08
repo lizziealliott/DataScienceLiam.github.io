@@ -1,7 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-        "text": "House price to earnings ratio by London borough (worked place based)",
+        "text": "House price to earnings ratio",
+        "subtitle":"by London borough (workplace based)",
         "subtitleFontStyle": "italic",
         "subtitleFontSize": 10,
         "anchor": "middle",

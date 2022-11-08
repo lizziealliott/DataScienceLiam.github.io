@@ -1,7 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-        "text": "London boroughs - Source: skgrange",
+        "text": "London boroughs",
+        "subtitle": "Source: skgrange",
         "subtitleFontStyle": "italic",
         "subtitleFontSize": 10,
         "anchor": "middle",
